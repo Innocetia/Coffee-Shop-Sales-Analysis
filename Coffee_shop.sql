@@ -8,7 +8,9 @@ FROM workspace.coffee.bright_coffee_shop_analysis;
 
 -- Revenue, Units Sold, Sales
 SELECT
-    ROUND(SUM(transaction_qty * unit_price)) AS total_revenue,
+    transaction_id,
+    MONTHNAME(TO_DATE(transaction_date)) AS name_of_month,
+    SUM(transaction_qty * unit_price) AS total_revenue,
     SUM(transaction_qty) AS number_of_units_sold,
     COUNT(transaction_id) AS number_of_sales,
 
@@ -21,8 +23,7 @@ SELECT
     END AS time_bucket,
     DAYNAME(TO_DATE(transaction_date)) AS day_name,
     CASE
-        WHEN day_name = 'Sunday' THEN 'Weekend'
-        WHEN day_name = 'Saturday' THEN 'Weekend'
+        WHEN day_name IN ('Sun', 'Sat') THEN 'Weekend'
         ELSE 'Weekday'
         END AS day_type,
     product_category,
@@ -35,4 +36,8 @@ day_name,
 product_category,
 product_type,
 product_detail,
+transaction_id,
+transaction_date,
+transaction_time,
+unit_price,
 store_location;
