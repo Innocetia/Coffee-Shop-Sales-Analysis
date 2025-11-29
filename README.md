@@ -50,9 +50,14 @@ https://lookerstudio.google.com/s/lhgs5_M5TG8
 
 📂 Repository Contents
 
-- Miro Planning
-- Dashboard (PDF)
-- Presentation (PDF)
-- Raw data (CSV)
-- Processed data (CSV)
-- SQL code
+- Miro Planning: https://miro.com/app/board/uXjVJwkcLoM=/?share_link_id=238587003395
+  
+- Dashboard (PDF): https://github.com/Innocetia/Coffee-Shop-Sales-Analysis/blob/main/Coffee_Shop_Sales_-_Dashboard.pdf
+  
+- Presentation (PDF): https://github.com/Innocetia/Coffee-Shop-Sales-Analysis/blob/main/Presentation_Coffee%20Shop%20Sales.pdf
+  
+- Raw data (CSV): https://github.com/Innocetia/Coffee-Shop-Sales-Analysis/blob/main/Bright%20Coffee%20Shop%20Analysis%20-%20Transactions%20(1).csv
+  
+- Processed data (CSV): https://github.com/Innocetia/Coffee-Shop-Sales-Analysis/blob/main/Coffee_Shop_Sales_sql%20(2).csv
+  
+- SQL code: https://github.com/Innocetia/Coffee-Shop-Sales-Analysis/blob/main/Coffee_shop.sql
